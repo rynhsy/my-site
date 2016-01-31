@@ -36,7 +36,6 @@
       <article>
         <h1>I am a
           <span id="typed-strings">
-            <span>    </span>
             <span>design sprinting</span>
             <span>user testing</span>
             <span>creative facilitating</span>
@@ -80,7 +79,7 @@
     </footer>
   </div>
 
-  <script src="js/jquery-2.1.1.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <script src="js/typed.js"></script>
   <script>
   $(function(){
@@ -91,6 +90,7 @@
           loop: false,
           contentType: 'html',
           loopCount: false,
+          startDelay: 2000,
           callback: function(){ foo(); },
           resetCallback: function() { newTyped(); }
       });

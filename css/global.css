@@ -117,6 +117,8 @@ p {
 .typed-cursor{
 		opacity: 1;
 		font-weight: 100;
+		margin-left: -4px;
+		font-family: "chaparral-pro", Helvetica, Arial, sans-serif;
 		-webkit-animation: blink 0.7s infinite;
 		-moz-animation: blink 0.7s infinite;
 		-ms-animation: blink 0.7s infinite;
