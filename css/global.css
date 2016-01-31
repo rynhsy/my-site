@@ -137,24 +137,16 @@ p {
 .social {
 	margin-left: -10px;
 	height: 44px;
-	font-size: 24px;
+	font-size: 30px;
 }
 .social a {
 	padding: 10px;
 	float: left;
-	margin-right: .3em;
+	margin-right: .7em;
 	color: rgba(255,255,255,1);
 }
 .social a:hover {
-	color: rgba(255,255,255,.7);
-}
-@media (min-width: 600px) {
-	.social {
-		font-size: 30px;
-	}
-	.social a {
-		margin-right: .7em;
-	}
+	color: rgba(0,0,0,.7);
 }
 
 /* Animate content in */
