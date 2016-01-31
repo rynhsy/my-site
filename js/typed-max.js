@@ -432,3 +432,21 @@
 
 
 }(window.jQuery);
+
+$(function(){
+    $("#typed").typed({
+        stringsElement: $('#typed-strings'),
+        typeSpeed: 30,
+        backDelay: 500,
+        loop: false,
+        contentType: 'html',
+        loopCount: false,
+        startDelay: 2000,
+        callback: function(){ foo(); },
+        resetCallback: function() { newTyped(); }
+    });
+    $(".reset").click(function(){
+        $("#typed").typed('reset');
+    });
+});
+function foo(){ console.log("Callback"); }
