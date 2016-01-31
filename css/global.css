@@ -97,8 +97,9 @@ p {
 }
 /* Footer */
 .social {
-	margin: 0 0 100px -10px;
+	margin-left: -10px;
 	height: 44px;
+	padding-bottom: 100px;
 }
 .social a {
 	padding: 10px;
