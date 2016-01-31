@@ -33,8 +33,21 @@
         <h2>You have reached the World Wide Web page of me, Ryan Hussey.</h2>
       </article>
 
-      <article class=main>
-        <h1>I am a Designer.</h1>
+      <article>
+        <h1>I am a
+          <span id="typed-strings">
+            <span>    </span>
+            <span>design sprinting</span>
+            <span>user testing</span>
+            <span>creative facilitating</span>
+            <span>bicycle riding</span>
+            <span>prototype building</span>
+            <span>idea generating</span>
+            <span>creative team developing</span>
+            <span>strategic thinking</span>
+            <span>Designer.</span>
+          </span>
+          <span id="typed" style="white-space:pre;"></span></h1>
         <p>I’m currently Creative Director at Play, a Digital Innovation Agency in Manchester, UK.</p>
         <p>Previously I was Senior Designer at the BBC, working on iWonder, iPlayer, BBC News, BBC Sport’s London 2012 Olympics offering and the BBC Red Button on SmartTVs.</p>
         <p>More important than all of that though, is, my Nanna is super proud of me. She tells me every time I see her.</p>
@@ -66,4 +79,25 @@
       </ul>
     </footer>
   </div>
+
+  <script src="js/jquery-2.1.1.js"></script>
+  <script src="js/typed.js"></script>
+  <script>
+  $(function(){
+      $("#typed").typed({
+          stringsElement: $('#typed-strings'),
+          typeSpeed: 30,
+          backDelay: 500,
+          loop: false,
+          contentType: 'html',
+          loopCount: false,
+          callback: function(){ foo(); },
+          resetCallback: function() { newTyped(); }
+      });
+      $(".reset").click(function(){
+          $("#typed").typed('reset');
+      });
+  });
+  function foo(){ console.log("Callback"); }
+  </script>
 </body></html>
