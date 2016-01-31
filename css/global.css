@@ -59,14 +59,14 @@ html, body {
 }
 /* Styles */
 #content {
-	padding: 0 100px;
+	padding: 0 100px 100px;
 	margin: 0 auto;
 	max-width: 800px;
 
 }
 .container {
 	margin-bottom: 30px;
-	animation: content-intro 1s cubic-bezier(0.7,0,0.3,1) both;
+	animation: content_an 1s cubic-bezier(0.7,0,0.3,1) both;
 }
 @media (max-width: 599px) {
 	#content {
@@ -99,11 +99,15 @@ p {
 	height: auto;
 	margin: 170px 0 70px;
 }
+@media (max-width: 599px) {
+	.logo {
+		margin: 120px 0 50px;
+	}
+}
 /* Footer */
 .social {
 	margin-left: -10px;
 	height: 44px;
-	padding-bottom: 100px;
 	font-size: 24px;
 }
 .social a {
@@ -117,7 +121,7 @@ color: rgba(255,255,255,.7);
 }
 
 /* Animate content in */
-@-webkit-keyframes content-intro {
+@-webkit-keyframes content_an {
 	0% {
 		opacity: 0;
 		margin-top: 100px;
@@ -131,35 +135,7 @@ color: rgba(255,255,255,.7);
 		margin-top: 0px;
 	}
 }
-@-moz-keyframes content-intro {
-	0% {
-		opacity: 0;
-		margin-top: 100px;
-	}
-	20% {
-		opacity: 0;
-		margin-top: 100px;
-	}
-	100% {
-		opacity: 1;
-		margin-top: 0px;
-	}
-}
-@-ms-keyframes content-intro {
-	0% {
-		opacity: 0;
-		margin-top: 100px;
-	}
-	20% {
-		opacity: 0;
-		margin-top: 100px;
-	}
-	100% {
-		opacity: 1;
-		margin-top: 0px;
-	}
-}
-@-o-keyframes content-intro {
+@keyframes content_an {
 	0% {
 		opacity: 0;
 		margin-top: 100px;
@@ -186,27 +162,12 @@ color: rgba(255,255,255,.7);
 	-o-animation: blink 0.7s infinite;
 	animation: blink 0.7s infinite;
 }
-@-keyframes blink{
-	0% { opacity:1; }
-	50% { opacity:0; }
-	100% { opacity:1; }
-}
 @-webkit-keyframes blink{
 	0% { opacity:1; }
 	50% { opacity:0; }
 	100% { opacity:1; }
 }
-@-moz-keyframes blink{
-	0% { opacity:1; }
-	50% { opacity:0; }
-	100% { opacity:1; }
-}
-@-ms-keyframes blink{
-	0% { opacity:1; }
-	50% { opacity:0; }
-	100% { opacity:1; }
-}
-@-o-keyframes blink{
+@-keyframes blink{
 	0% { opacity:1; }
 	50% { opacity:0; }
 	100% { opacity:1; }
@@ -230,10 +191,7 @@ color: rgba(255,255,255,.7);
 [class^="ss-"].right:after, [class*=" ss-"].right:after,
 [class^="ss-"][class*=" ss-social"].right:after, [class*=" ss-"][class*=" ss-social"].right:after{
   font-family: "SSSocial";
-  font-style: normal;
-  font-weight: normal;
   text-decoration: none;
-  text-rendering: optimizeLegibility;
   white-space: nowrap;
   -webkit-font-feature-settings: "liga";
   -moz-font-feature-settings: "liga=1";
@@ -241,7 +199,6 @@ color: rgba(255,255,255,.7);
   -ms-font-feature-settings: "liga" 1;
   -o-font-feature-settings: "liga";
   font-feature-settings: "liga";
-  -webkit-font-smoothing: antialiased;
 }
 
 .ss-icon.ss-social-circle,
