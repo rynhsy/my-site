@@ -44,16 +44,21 @@ p {
 	letter-spacing: -.007em;
 }
 .second a {
-	color: #fff;
-	background-image: linear-gradient(to bottom, rgba(255,255,255,0.8) 25%, rgba(255,255,255,0) 25%);
-	text-decoration: none;
-  background-repeat: repeat-x;
-	background-size: 2px 2px;
-  background-position: 0 28px;
-	text-shadow: .10em 0 $red,-.10em 0 $red;
+	text-decoration: underline;
+	color: #fff !important;
 }
 .second a:visited {
 	color: #fff;
+}
+@media (min-resolution: 2dppx), (-webkit-min-device-pixel-ratio: 2) {
+	.second a {
+		background-image: linear-gradient(to bottom, rgba(255,255,255,0.8) 25%, rgba(255,255,255,0) 25%);
+		text-decoration: none;
+		background-repeat: repeat-x;
+		background-size: 2px 2px;
+		background-position: 0 1.1em;
+		text-shadow: .10em 0 $red,-.10em 0 $red;
+	}
 }
 
 @media (min-width: 600px) {
@@ -69,10 +74,6 @@ p {
 	}
 	p {
 		font-size: 26px;
-	}
-	.second a {
-		color: #fff !important;
-	  background-position: 0 24px;
 	}
 }
 /* Layout */
@@ -128,16 +129,6 @@ p {
 }
 
 /* Animate content in */
-@-webkit-keyframes content_an {
-	0% {
-		opacity: 0;
-		margin-top: 6em;
-	}
-	100% {
-		opacity: 1;
-		margin-top: 0;
-	}
-}
 @keyframes content_an {
 	0% {
 		opacity: 0;
@@ -158,16 +149,7 @@ p {
 	font-weight: 100;
 	margin-left: -4px;
 	font-family: "chaparral-pro", Helvetica, Arial, sans-serif;
-	-webkit-animation: blink 0.7s infinite;
-	-moz-animation: blink 0.7s infinite;
-	-ms-animation: blink 0.7s infinite;
-	-o-animation: blink 0.7s infinite;
 	animation: blink 0.7s infinite;
-}
-@-webkit-keyframes blink{
-	0% { opacity:1; }
-	50% { opacity:0; }
-	100% { opacity:1; }
 }
 @keyframes blink {
 	0% { opacity:1; }
