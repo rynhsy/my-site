@@ -196,7 +196,7 @@ p {
 	50% { opacity:0; }
 	100% { opacity:1; }
 }
-@-keyframes blink{
+@keyframes blink {
 	0% { opacity:1; }
 	50% { opacity:0; }
 	100% { opacity:1; }
@@ -205,11 +205,11 @@ p {
 /* Symbol set */
 @font-face {
   font-family: "SSSocial";
-  src: url('../fonts/ss-social-regular.eot');
-  src: url('../fonts/ss-social-regular.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/ss-social-regular.woff') format('woff'),
-       url('../fonts/ss-social-regular.ttf') format('truetype'),
-       url('../fonts/ss-social-regular.svg#SSSocialRegular') format('svg');
+  src: url('fonts/ss-social-regular.eot');
+  src: url('fonts/ss-social-regular.eot?#iefix') format('embedded-opentype'),
+       url('fonts/ss-social-regular.woff') format('woff'),
+       url('fonts/ss-social-regular.ttf') format('truetype'),
+       url('fonts/ss-social-regular.svg#SSSocialRegular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
