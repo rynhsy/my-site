@@ -115,7 +115,7 @@ p {
 .second {
 	animation: content_an 1s cubic-bezier(.3,.2,.3,.6) both 1.4s;
 }
-.logo {
+.main_header svg {
 	width: 95px;
 	height: auto;
 	margin: 120px 0 50px;
@@ -128,7 +128,7 @@ p {
 	.intro {
 		text-align: center;
 	}
-	.logo {
+	.main_header svg {
 		width: 110px;
 		margin: 150px 0 50px;
 	}
