@@ -1,10 +1,10 @@
-$red: #FC250E;
+$blue: #00BAD3;
 
 @import "reset";
 
 html, body {
 	height: 100%;
-	background: $red;
+	background: $blue;
 	text-align: left;
 	color: #fff;
 	line-height: 1.3;
@@ -57,7 +57,7 @@ p {
 		background-repeat: repeat-x;
 		background-size: 2px 2px;
 		background-position: 0 1.1em;
-		text-shadow: .10em 0 $red,-.10em 0 $red;
+		text-shadow: .10em 0 $blue,-.10em 0 $blue;
 	}
 }
 @media (min-width: 600px) {
@@ -81,14 +81,14 @@ p {
 #content {
 	padding: 0 30px 10em;
 	margin: 0 auto;
-	max-width: 600px;
+	max-width: 700px;
 }
 .container {
 	margin-bottom: 2.5em;
-	animation: content_an 1s cubic-bezier(0.7,0,0.4,1) both .3s;
+	/*animation: content_an 1s cubic-bezier(0.7,0,0.4,1) both .3s;
 }
 .second {
-	animation: content_an 1s cubic-bezier(.3,.2,.3,.6) both 1.4s;
+	animation: content_an 1s cubic-bezier(.3,.2,.3,.6) both 1.4s;*/
 }
 .main_header svg {
 	width: 95px;
@@ -130,7 +130,7 @@ p {
 	}
 }
 
-/* Animate content in */
+/* Animate content in
 @keyframes content_an {
 	0% {
 		opacity: 0;
@@ -140,7 +140,7 @@ p {
 		opacity: 1;
 		margin-top: 0;
 	}
-}
+}*/
 
 /*------------------------------
 	Plugin styles
