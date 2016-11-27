@@ -1,146 +1,104 @@
-$blue: #00BAD3;
+$bg: #f6f4f1;
+$black: #282727;
 
 @import "reset";
 
 html, body {
-	height: 100%;
-	background: $blue;
+	background: $bg;
+	font-family: 'Merriweather', serif;
+	font-size: 20px;
+	letter-spacing: -.004em;
+	line-height: 1.7;
 	text-align: left;
-	color: #fff;
-	line-height: 1.3;
+	color: $black;
+	font-weight: 400;
+	border: 5px solid #fff;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	@media (min-width: 600px) {
+		font-size: 26px;
+		letter-spacing: -.008em;
+		border: 10px solid #fff;
+	}
 }
 /* Type */
-h1, h2 {
-	font-family: "proxima-nova", Helvetica, Arial, sans-serif;
-  font-size: 22px;
-	font-weight: 700;
-	letter-spacing: -.004em;
-	margin-bottom: 1em;
-}
-.intro h1 {
-	font-size: 38px;
-	font-weight: 900;
-	letter-spacing: -.01em;
-	text-transform: uppercase;
-	margin-bottom: .5em;
-}
-.intro h2:after {
-	content: '';
-  height: 4px;
-  width: 3em;
-  background-color: rgba(0,0,0,0.1);
-  display: block;
-  margin: 1.3em 0;
-  position: relative;
-}
+h1,
 p {
-	font-family: "chaparral-pro", Georgia, serif;
-  font-size: 22px;
-	margin-bottom: 1em;
-	line-height: 1.5;
-	letter-spacing: -.007em;
+	margin-bottom: 1.4em;
 }
-.second a {
-	text-decoration: underline;
-	color: #fff !important;
-}
+.second a,
 .second a:visited {
-	color: #fff;
+	text-decoration: underline;
+	color: $black !important;
 }
 @media (min-resolution: 2dppx), (-webkit-min-device-pixel-ratio: 2) {
 	.second a {
-		background-image: linear-gradient(to bottom, rgba(255,255,255,0.8) 25%, rgba(255,255,255,0) 25%);
+		background-image: linear-gradient(to bottom,
+			rgba(40,39,39,0.8) 25%,
+			rgba(40,39,39,0) 25%);
 		text-decoration: none;
 		background-repeat: repeat-x;
 		background-size: 2px 2px;
 		background-position: 0 1.1em;
-		text-shadow: .10em 0 $blue,-.10em 0 $blue;
-	}
-}
-@media (min-width: 600px) {
-	h1, h2 {
-		font-size: 30px;
-		line-height: 1.2;
-		letter-spacing: -.008em;
-	}
-	.intro h1 {
-		font-size: 50px;
-		letter-spacing: -.014em;
-	}
-	.intro h2:after {
-	  margin: 1.3em auto;
-	}
-	p {
-		font-size: 26px;
+		text-shadow: .10em 0 $bg,-.10em 0 $bg;
 	}
 }
 /* Layout */
+.main_header {
+	position: relative;
+	text-align: center;
+}
+svg {
+	display: block;
+}
+.pop {
+	width: 354px;
+	height: 204px;
+	margin: 70px auto;
+	@media (min-width: 751px) {
+		width: 731px;
+		height: 424px;
+		margin: 100px auto;
+	}
+}
+.hello {
+	width: 242px;
+	height: 94px;
+	margin: -219px auto 130px;
+	@media (min-width: 600px) {
+		width: 396px;
+		height: 152px;
+		margin: -380px auto 250px;
+	}
+}
 #content {
 	padding: 0 30px 10em;
 	margin: 0 auto;
 	max-width: 700px;
-}
-.container {
-	margin-bottom: 2.5em;
-	/*animation: content_an 1s cubic-bezier(0.7,0,0.4,1) both .3s;
-}
-.second {
-	animation: content_an 1s cubic-bezier(.3,.2,.3,.6) both 1.4s;*/
-}
-.main_header svg {
-	width: 95px;
-	height: 91px;
-	margin: 120px 0 50px;
-}
-@media (min-width: 600px) {
-	#content {
+	@media (min-width: 600px) {
 		padding: 0 100px 12em;
 	}
-	.main_header,
-	.intro {
-		text-align: center;
-	}
-	.main_header svg {
-		height: 110px;
-		width: 105px;
-		margin: 150px 0 50px;
-	}
+}
+.container {
+	padding-bottom: 2.5em;
 }
 /* Footer */
 .social {
-	margin-left: -10px;
 	height: 44px;
 	font-size: 30px;
+	margin: 0 auto;
+	width: 285px;
 }
 .social a {
 	padding: 10px;
 	float: left;
 	margin-right: .7em;
-	color: rgba(0,0,0,.3);
+	color: rgba(40,39,39,1);
 }
 .social a:hover {
-	color: rgba(0,0,0,.5);
+	color: rgba(40,39,39,.8);
 }
-@media (min-width: 600px) {
-	.social {
-		font-size: 26px;
-	}
-}
-
-/* Animate content in
-@keyframes content_an {
-	0% {
-		opacity: 0;
-		margin-top: 6em;
-	}
-	100% {
-		opacity: 1;
-		margin-top: 0;
-	}
-}*/
 
 /*------------------------------
 	Plugin styles
@@ -150,7 +108,6 @@ p {
 	opacity: 1;
 	font-weight: 100;
 	margin-left: -4px;
-	font-family: "chaparral-pro", Helvetica, Arial, sans-serif;
 	animation: blink 0.7s infinite;
 }
 @keyframes blink {
@@ -182,7 +139,6 @@ p {
   -moz-font-feature-settings: "liga=1";
   -moz-font-feature-settings: "liga";
   -ms-font-feature-settings: "liga" 1;
-  -o-font-feature-settings: "liga";
   font-feature-settings: "liga";
 }
 .ss-icon.ss-social-circle,
