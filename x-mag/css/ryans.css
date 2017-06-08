@@ -1,0 +1,263 @@
+.category_rh {
+  font-family: lato,sans-serif;
+  color: #070707;
+  padding: 0 4px;
+  background: #fff;
+  /* hero */
+  /* editors picks */
+  /* categories */
+  /* benefits and shops */ }
+  .category_rh .rh_inner {
+    max-width: 808px;
+    margin: -62px auto 0; }
+    @media (min-width: 992px) {
+      .category_rh .rh_inner {
+        padding-top: 32px; } }
+  .category_rh h1, .category_rh h2, .category_rh h3, .category_rh h4 {
+    font-weight: bold; }
+  .category_rh h1 {
+    font-size: 24px;
+    margin-top: -50px;
+    margin-bottom: 20px;
+    background: white; }
+    @media (min-width: 768px) {
+      .category_rh h1 {
+        font-size: 32px;
+        padding-top: 40px;
+        margin-bottom: 30px; } }
+  .category_rh h2 {
+    font-size: 24px;
+    margin-top: 50px; }
+    @media (min-width: 768px) {
+      .category_rh h2 {
+        font-size: 28px; } }
+  .category_rh h3 {
+    font-size: 16px; }
+    @media (min-width: 768px) {
+      .category_rh h3 {
+        font-size: 24px; } }
+  .category_rh h4 {
+    font-size: 24px; }
+    @media (min-width: 768px) {
+      .category_rh h4 {
+        font-size: 28px; } }
+  .category_rh .category_hero {
+    background: #F3E8DA url("../img/hero-ipad.jpg") no-repeat top left;
+    background-size: 550px 249px;
+    padding: 240px 12px 12px;
+    display: block;
+    text-decoration: none;
+    color: #070707; }
+    @media (min-width: 768px) {
+      .category_rh .category_hero {
+        height: 360px;
+        position: relative;
+        background-size: 794px 360px; } }
+  .category_rh .hero_text {
+    background: #fff;
+    padding: 16px 16px 2px 16px;
+    position: relative; }
+    @media (min-width: 768px) {
+      .category_rh .hero_text {
+        position: absolute;
+        width: 300px;
+        top: 26px;
+        bottom: 26px;
+        right: 30px;
+        padding: 34px 30px 26px; } }
+    .category_rh .hero_text h3 {
+      max-width: 230px;
+      margin-top: 0; }
+  .category_rh .price_from {
+    display: none; }
+    @media (min-width: 768px) {
+      .category_rh .price_from {
+        display: block; } }
+  .category_rh .hero_bottom {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.1em;
+    position: absolute;
+    right: 16px;
+    bottom: 4px;
+    text-align: right; }
+    @media (min-width: 768px) {
+      .category_rh .hero_bottom {
+        text-align: left;
+        right: auto;
+        bottom: 18px; } }
+  .category_rh .hero_price {
+    font-size: 24px; }
+    @media (min-width: 768px) {
+      .category_rh .hero_price {
+        font-size: 28px; } }
+  .category_rh .product_list a {
+    display: block;
+    text-align: center;
+    color: #070707;
+    width: 50%;
+    font-size: 16px;
+    float: left;
+    margin: 12px 0; }
+    @media (min-width: 768px) {
+      .category_rh .product_list a {
+        font-size: 18px;
+        width: 33.333%; } }
+  .category_rh .product_list p {
+    margin: 12px 0 2px; }
+  .category_rh .product_list img {
+    width: 100%;
+    height: auto; }
+  .category_rh .product_list .product_price {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 0; }
+  .category_rh .product_list:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .category_rh .tech_brands {
+    padding: 0; }
+    .category_rh .tech_brands li {
+      float: left;
+      width: 50%;
+      list-style-type: none;
+      display: block;
+      text-align: center; }
+      @media (min-width: 768px) {
+        .category_rh .tech_brands li {
+          width: 25%; } }
+      .category_rh .tech_brands li img {
+        width: 70%;
+        height: auto; }
+    .category_rh .tech_brands:after {
+      content: "";
+      display: table;
+      clear: both; }
+  .category_rh .categories_grid {
+    font-size: 14px; }
+    .category_rh .categories_grid h4 {
+      font-weight: 400;
+      text-transform: uppercase;
+      font-size: 18px;
+      margin: 0 0 5px; }
+    .category_rh .categories_grid a {
+      color: #070707;
+      display: block;
+      text-decoration: none;
+      height: 180px; }
+      .category_rh .categories_grid a:hover button {
+        border: 2px solid #070707; }
+    .category_rh .categories_grid:after {
+      content: "";
+      display: table;
+      clear: both; }
+  .category_rh .category_wide {
+    padding: 12px 0 12px; }
+    @media (min-width: 600px) {
+      .category_rh .category_wide {
+        width: 46%;
+        float: left;
+        padding-bottom: 0; } }
+    .category_rh .category_wide .category_text_box {
+      margin-left: 50%;
+      margin-right: 30px;
+      padding-top: 40px; }
+  .category_rh .category_square_wrap:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .category_rh .category_square {
+    text-align: center;
+    width: 50%;
+    float: left;
+    padding-right: 6px;
+    box-sizing: border-box; }
+    @media (min-width: 600px) {
+      .category_rh .category_square {
+        padding: 12px 0 0 12px;
+        width: 27%; } }
+    .category_rh .category_square a {
+      padding: 113px 20px 0;
+      height: 160px; }
+      @media (min-width: 600px) {
+        .category_rh .category_square a {
+          padding-top: 138px;
+          height: 180px; } }
+    .category_rh .category_square:nth-child(2) {
+      padding-left: 6px;
+      padding-right: 0; }
+      @media (min-width: 600px) {
+        .category_rh .category_square:nth-child(2) {
+          padding-left: 12px; } }
+  .category_rh a.category_headphones {
+    background: #F5F5F5 url("../img/cat-headphones.jpg") no-repeat bottom left;
+    background-size: 100% auto; }
+  .category_rh a.category_tablets {
+    background: #D8E9F0 url("../img/cat-tablets.jpg") no-repeat top center;
+    background-size: 100% auto; }
+  .category_rh a.category_laptops {
+    background: #E6E9EB url("../img/cat-laptops.jpg") no-repeat top center;
+    background-size: 100% auto; }
+  .category_rh a.category_activity {
+    background: #E2EFF8 url("../img/cat-activity.jpg") no-repeat bottom left;
+    background-size: 100% auto; }
+  .category_rh a.category_cameras {
+    background: #FBF6F0 url("../img/cat-cameras.jpg") no-repeat top center;
+    background-size: 100% auto; }
+  .category_rh a.category_speakers {
+    background: #F5F5F5 url("../img/cat-speakers.jpg") no-repeat top center;
+    background-size: 100% auto; }
+  .category_rh .btn_browse {
+    border: 2px solid rgba(8, 8, 8, 0.5);
+    background: transparent;
+    margin: 0;
+    padding: 10px 22px 12px;
+    line-height: 1;
+    border-radius: 4px;
+    margin-top: 12px; }
+  .category_rh .util--bg-light {
+    padding: 20px 0;
+    margin: 80px 0 60px; }
+    @media (min-width: 768px) {
+      .category_rh .util--bg-light {
+        padding: 32px 0 42px; } }
+    .category_rh .util--bg-light:after {
+      content: "";
+      display: table;
+      clear: both; }
+  .category_rh .benefit_box {
+    font-size: 14px;
+    padding: 16px;
+    box-sizing: border-box; }
+    @media (min-width: 768px) {
+      .category_rh .benefit_box {
+        width: 50%;
+        float: left;
+        padding: 22px; } }
+    .category_rh .benefit_box h2 {
+      color: #004074;
+      font-size: 16px;
+      margin: 4px 0; }
+    .category_rh .benefit_box img {
+      float: left;
+      padding: 5px 22px 0 5px;
+      width: 80px;
+      height: 60px; }
+      @media (min-width: 768px) {
+        .category_rh .benefit_box img {
+          width: 80px;
+          height: 58px;
+          margin-left: 10px; } }
+    .category_rh .benefit_box p {
+      overflow: hidden;
+      margin-bottom: 0; }
+  .category_rh .shops-at {
+    text-align: center;
+    margin: 60px 0 32px; }
+  .category_rh .shop-links {
+    margin-bottom: 80px; }
+  .category_rh .shop-links__item {
+    margin: 0; }
+    .category_rh .shop-links__item a {
+      padding: 11px 0; }
