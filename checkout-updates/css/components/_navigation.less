@@ -1,0 +1,165 @@
+﻿@import "../_retail-variables.less";
+
+.nav > li {
+    position: static !important;
+}
+
+.mega-nav-container {
+    padding: 0;
+
+    .navbar-collapse {
+        padding: 0;
+    }
+
+    .mega-nav {
+        color: @base-font-colour-light;
+        position: relative;
+
+        .mega-nav-separator {
+            font-size: 20px;
+            padding-top: 12px;
+        }
+
+        li > a.focus {
+            background-color: @secondary-colour;
+        }
+
+        .mega-nav-panel {
+            padding: 20px;
+            position: absolute;
+            left: 0;
+            width: 950px;
+            z-index: 998;
+            /*box-shadow: 2px 2px 2px #000;*/
+            background-color: @secondary-colour;
+            color: @base-font-colour-light;
+            
+            .mega-nav-item {
+                padding: 10px;
+                padding-right: 20px;
+                width: 20%;
+            }
+        }
+
+        .mega-nav-close-button {
+            //Hidden during retail sprint
+            display: none;
+
+            right: 0;
+            top: 0;
+            position: absolute;
+            z-index: 1;
+            float: right;
+            color: @base-font-colour-light;
+            background-color: @clickable-light-colour;
+            padding-top: 7pt;
+            cursor: pointer;
+            margin-top: 0;
+            /*margin-right: -15pt;*/
+            width: 30pt;
+            height: 30pt;
+            font-size: 11pt; /* override nav font resizing on tablet */
+            &:hover, &:focus {
+                background-color: @clickable-light-hover-colour;
+                text-decoration: none;
+            }
+        }
+        
+        .second-tier {
+            font-size: 14px;
+            border-bottom: 1px solid #fff;
+            margin-bottom: 5px;
+            padding-bottom: 5px;
+        }
+
+        .third-tier {
+            padding-top: 7px;
+            padding-bottom: 7px;
+
+            a {
+                padding: 10px 0;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.main-nav {
+    padding-top: 20px;
+
+    @media (min-width: @screen-sm-min) {
+        padding-top: 30px;
+    }
+}
+
+.header-logo {
+    @media (min-width: @screen-md-min) {
+        display: inline-block;
+    }
+}
+
+.header-logo__link {
+    float: left;
+}
+
+.header-logo__text {
+    display: none;
+    padding: 12px 0 12px 35px;
+    margin: 20px;
+    // Lato Bold hosted by TypeKit
+    font-family: lato, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    border-left: 1px solid;
+    border-left-color: #FFF;
+    border-left-color: rgba(255,255,255, .3);
+
+    @media (min-width: @screen-md-min) {
+        display: inline-block;
+    }
+}
+
+.mobile-menu-button {
+    float: none;
+    margin:0;
+    padding-top: 0;
+
+    &:active,
+    &:focus,
+    &:hover {
+        text-decoration: none!important;
+    }
+}
+
+.mobile-menu-button__icon {
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.mobile-menu-button__text {
+    display: inline-block;
+    font-family: lato, sans-serif;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.navigation-container {
+    background-color: #032F61;
+
+    @media (max-width: @screen-sm-max) {
+        padding: 12px;
+    }
+}
+
+.nav-item.nav-item {
+    a {
+        padding: 15px;
+        font-size: 16px;
+        font-family: lato, sans-serif;
+    }
+}
+
+.main-nav-with-promo {
+    padding-bottom: 270px;
+}

@@ -1,0 +1,35 @@
+﻿
+
+@gradient-color--left: #09559D;
+@gradient-color--right: #032F61;
+
+.gradient {
+    background: @gradient-color--right;
+    background: -webkit-gradient(linear, right top, left bottom, from(@gradient-color--left), to(@gradient-color--right));
+    background: linear-gradient(to bottom left, @gradient-color--left, @gradient-color--right)
+}
+
+.util--bg-light {
+    background-color: #F3F4F5;
+}
+
+.util--heading-medium {
+    font-family: lato, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 28px;
+    color: #000;
+    margin-bottom: 18px;
+}
+
+.util--block {
+    display: block;
+}
+
+.util--no-margin-top {
+    margin-top: 0;
+}
+
+.util--pos-relative {
+    position: relative;
+}

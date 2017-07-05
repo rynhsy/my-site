@@ -1,0 +1,75 @@
+﻿@screen-xs: 320px;
+@screen-xs-min: @screen-xs;
+@screen-phone: @screen-xs-min;
+
+// Small screen / tablet
+// Note: Deprecated @screen-sm and @screen-tablet as of v3.0.1
+@screen-sm: 768px;
+@screen-sm-min: @screen-sm;
+@screen-tablet: @screen-sm-min;
+
+// medium big tablet screen / tablet size
+@screen-smd: 800px;
+
+// Medium screen / desktop
+// Note: Deprecated @screen-md and @screen-desktop as of v3.0.1
+@screen-md: 1024px;
+@screen-md-min: @screen-md;
+@screen-desktop: @screen-md-min;
+
+// Large screen / wide desktop
+// Note: Deprecated @screen-lg and @screen-lg-desktop as of v3.0.1
+@screen-lg: 1280px;
+@screen-lg-min: @screen-lg;
+@screen-lg-desktop: @screen-lg-min;
+
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max: (@screen-sm-min - 1);
+@screen-sm-max: (@screen-md-min - 1);
+@screen-md-max: (@screen-lg-min - 1);
+
+@line-height-base: 1.5;
+
+@border-radius-base: 0px;
+@border-radius-large: 0px;
+@border-radius-small: 0px;
+
+@primary-colour: #296695;
+@secondary-colour: #011e41;
+
+@drop-shadow-colour: #000;
+
+@base-font-colour-light: #fff;
+
+@clickable-light-colour: #d90b79;
+@clickable-light-hover-colour: #ad0860;
+
+@add-to-basket-button-background-colour: #2a822a;
+
+@font-face {
+    font-family: content-regular;
+    src: url('/Content/fonts/Lato-Reg-webfont.eot');
+    src: url('/Content/fonts/Lato-Reg-webfont.eot?#iefix') format('embedded-opentype'), url('/Content/fonts/Lato-Reg-webfont.woff') format('woff'), url('/Content/fonts/Lato-Reg-webfont.ttf') format('truetype'), url('/Content/fonts/Lato-Reg-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: heading;
+    src: url('/Content/fonts/Raleway-Regular-webfont.eot');
+    src: url('/Content/fonts/Raleway-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('/Content/fonts/Raleway-Regular-webfont.woff') format('woff'), url('/Content/fonts/Raleway-Regular-webfont.ttf') format('truetype'), url('/Content/fonts/Raleway-Regular-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@footer-strip-background-colour: @primary-colour;
+@footer-strip-link-colour: @base-font-colour-light;
+@footer-strip-link-hover-colour: @base-font-colour-light;
+@footer-strip-link-hover-background-colour: @secondary-colour;
+
+@form-validation-success-colour: #109010;
+@form-validation-error-colour: #d90b79;
+
+@manchester-t1-background-colour: #017e3c;
+@manchester-t2-background-colour: #de014e;
+@manchester-t3-background-colour: #611570;

@@ -1,0 +1,37 @@
+﻿@import "../_retail-variables.less";
+
+.product-listing {
+    &.product-listing-dark {
+        background-color: #f5f5f5;
+    }
+
+    .product-tile {
+        min-height: 330px;
+
+        a:hover, a:focus {
+            .title {
+                color: @clickable-light-hover-colour;
+            }
+        }
+
+        .product-tile-image {
+            height: 180px;
+        }
+
+        img {
+            max-height: 180px;
+            margin: auto;
+        }
+
+        .title {
+            color: @clickable-light-colour;
+            padding: 20px 10px 10px 10px;
+            font-size: 18px;
+        }
+
+        .item-price {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+    }
+}
