@@ -1,0 +1,39 @@
+﻿@import "../_retail-variables.less";
+
+
+.footer-strip {
+    margin-top: 35px; 
+    padding: 35px 0;
+    background-color: @footer-strip-background-colour;
+    color: #fff;
+
+    .footer-strip-icon {
+        margin-bottom: 20pt;
+    }
+
+    .img-responsive {
+        display: inline-block;
+    }
+
+    .footer-links, .regulatory-links {
+        .footer-link {
+            margin-bottom: 10pt;
+
+            > a {
+                border-bottom: 1px dotted @footer-strip-link-colour;
+            }
+        }
+    }
+
+    a {
+        width: 100%;
+        color: @footer-strip-link-colour;
+        padding: 5pt;
+
+        &:hover, &:focus {
+            background-color: @footer-strip-link-hover-background-colour;
+            color: @footer-strip-link-hover-colour;
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,430 @@
+﻿
+@reservation-form-invalid-colour: #F31E1E;
+@reservation-form-success-colour: #109010;
+
+@input-border: #BFBFBF;
+@main-blue: #0A579F;
+@text-color: #070707;
+@light-grey: #f3f4f5;
+@blue: #004074;
+@grey-text: #7F7F7F;
+@divides: #E2E8EB;
+@blue-fifty: #89aacf;
+
+.checkout {
+  font-family: lato,sans-serif;
+
+  h1, h2, h3, h4 {
+    font-weight: 700;
+  }
+
+  h1 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  h2 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  h3 {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 8px;
+    margin-top: 0;
+    padding-top: 20px;
+  }
+
+  h4 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  a {
+    color: @text-color;
+    text-decoration: underline;
+  }
+
+  .small-help {
+    font-size: 14px;
+    color: @grey-text;
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+
+  /* header */
+
+  .checkout-header {
+    background: linear-gradient(to bottom left,#09559d,#032f61);
+    height: 80px;
+    box-sizing: border-box;
+    padding-top: 12px;
+
+    svg {
+      width: 142px;
+      height: 54px;
+    }
+  }
+
+  .checkout-header__stn {
+    svg {
+      width: 176px;
+    }
+  }
+
+  /* form styles */
+
+  form {
+
+    .control-label {
+      font-size: 16px;
+      font-weight: 400;
+      text-align: left;
+      margin-bottom: 8px;
+      padding: 0;
+    }
+
+    .form-group {
+      margin: 0 0 16px;
+      position: relative;
+    }
+
+    .form-control {
+      background-color: #fff;
+      border: 1px solid @input-border !important;
+      box-shadow: none !important;
+      font-size: 16px;
+      color: @text-color;
+      padding: 4px 12px;
+      height: 48px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+
+    .input-group-addon {
+      background: url(http://www.stanstedairport.com/Content/_ccl-content/build/_client/images/svg-sprite.svg) no-repeat;
+      background-position: -25px -174px;
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      right: 20px;
+      top: 39px;
+      border: 0;
+    }
+
+    .mid-form {
+      width: 66.6%;
+      box-sizing: border-box;
+      padding-right: 16px;
+      display: inline-block;
+      margin-right: -4px;
+    }
+
+    .small-form {
+      width: 33.3%;
+      display: inline-block;
+      margin-right: -4px;
+    }
+
+    .radio-group {
+      margin-bottom: 28px;
+
+      .clearfix();
+
+      .radio-wrap {
+        float: left;
+        width: 33.33%;
+        padding-right: 16px;
+
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+
+      input[type=radio] {
+        position: absolute;
+        visibility: hidden;
+        display: none;
+      }
+
+      label {
+        color: @text-color;
+        display: inline-block;
+        cursor: pointer;
+        padding: 19px 5px;
+        background: @divides;
+        border-radius: 4px;
+        width: 100%;
+        text-align: center;
+      }
+
+      input[type=radio]:checked + label{
+        color: #fff;
+        background: @main-blue;
+      }
+    }
+
+    .button__stn {
+      margin-top: 16px;
+    }
+
+    /* Validation */
+    .form-control-feedback {
+      display: none !important;
+    }
+    .form-group-error {
+
+      .form-control {
+        border: 1px solid @reservation-form-invalid-colour !important;
+      }
+
+      .error-message {
+        color: @reservation-form-invalid-colour !important;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 400 !important;
+        position: absolute;
+        top: 0;
+        background: #fff;
+      }
+    }
+
+    .form-group__valid-below {
+      .error-message {
+        position: relative;
+        display: block;
+      }
+    }
+
+  }
+
+  /* Layout */
+
+  .wide-conteiner {
+    padding: 0 16px;
+    max-width: 951px;
+    margin: 0 auto;
+  }
+
+  .checkout-form {
+    max-width: 504px;
+    margin: 0 auto;
+    padding: 0 16px;
+    position: relative;
+  }
+
+  .checkout-crumb {
+    padding-top: 20px;
+    position: relative;
+    border-bottom: 2px solid @divides;
+
+    @media (min-width: @desktop) {
+      position: absolute;
+      top: -78px;
+      left: 16px;
+      right: 16px;
+      border-bottom: 2px solid @blue-fifty;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      right: 0;
+      height: 8px;
+      width: 2px;
+      background: @divides;
+
+      @media (min-width: @desktop) {
+        background: @blue-fifty;
+      }
+    }
+
+    ul {
+      padding: 0 0 10px;
+      margin: 0;
+
+      .clearfix();
+    }
+
+    li {
+      float: left;
+      width: 33.33%;
+      list-style: none;
+      color: @main-blue;
+
+      @media (min-width: @desktop) {
+        color: #fff;
+      }
+
+      &:nth-child(2) {
+        text-align: center;
+      }
+
+      &:nth-child(3) {
+        text-align: right;
+      }
+
+      .checkout-border {
+        border-bottom: 2px solid @main-blue;
+        padding-bottom: 10px;
+
+        @media (min-width: @desktop) {
+          border-bottom: 2px solid #fff;
+        }
+      }
+    }
+  }
+
+  .two-of-three {
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      height: 2px;
+      background: @main-blue;
+      right: 50%;
+
+      @media (min-width: @desktop) {
+        background: #fff;
+      }
+    }
+
+    li {
+      &:nth-child(3) {
+        color: @grey-text;
+
+        @media (min-width: @desktop) {
+          color: @blue-fifty;
+        }
+      }
+    }
+  }
+
+  .three-of-three {
+    border-bottom: 2px solid @main-blue;
+
+    @media (min-width: @desktop) {
+      border-bottom: 2px solid #fff;
+    }
+
+    &:before {
+      background: @main-blue;
+
+      @media (min-width: @desktop) {
+        background: #fff;
+      }
+    }
+  }
+
+  footer {
+    padding: 16px 0;
+    border-top: 1px solid @divides;
+    margin-top: 56px;
+
+    .small-help {
+      margin-top: 0;
+    }
+  }
+
+}
+
+/*
+
+Old styles incase you need it for validation and calendar stuff!
+-----------
+
+form {
+
+
+   .radio, .radio-inline {
+        padding-top: 0px !important;
+    }
+
+    .flight-date-container {
+        .input-group-addon {
+            background-color: @clickable-light-colour;
+            border-color: @clickable-light-colour;
+            color: #fff;
+
+            &:hover, &:focus {
+                background-color: @clickable-light-hover-colour;
+                border-color: @clickable-light-hover-colour;
+            }
+        }
+    }
+
+    label {
+        font-weight: normal;
+        font-size: 16px;
+        margin-bottom: 8px;
+
+        &.message-label {
+            text-align: center !important;
+        }
+    }
+
+    .form-group-error {
+        .form-control-feedback {
+            color: @reservation-form-invalid-colour;
+        }
+
+        .form-control {
+            border: 2px solid @reservation-form-invalid-colour;
+        }
+
+        .error-message {
+            color: @reservation-form-invalid-colour;
+            font-weight: bold;
+        }
+
+        .check-box {
+
+            small {
+                font-size: 14px !important;
+            }
+
+            .error-message {
+                color: @reservation-form-invalid-colour;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .has-feedback {
+        &.form-group-success {
+            .form-control-feedback {
+                color: @reservation-form-success-colour;
+            }
+
+            .form-control {
+                border: 2px solid @reservation-form-success-colour;
+            }
+
+            .error-message {
+                color: @reservation-form-success-colour;
+                font-weight: bold;
+            }
+        }
+
+
+        .form-control-feedback {
+            right: 25px !important;
+            height: 35px !important;
+            line-height: 35px !important;
+        }
+
+        .date-container .form-control-feedback {
+            right: 45px !important;
+        }
+    }
+}
+*/

@@ -1,0 +1,59 @@
+﻿.shop-links-container {
+    margin-top: 48px;
+}
+
+.shop-links {
+    list-style: none;
+    padding: 0;
+}
+
+.shop-links-heading {
+    margin-top: 64px;
+    text-align: center;
+}
+
+.shop-links__item {
+    display: block;
+    text-align: center;
+
+    //Every item after the 3rd one
+    &:nth-child(n+4) {
+        margin-top: 22px;
+    }
+
+    //Every 4th item, starting at the 3rd
+    &:nth-child(3n-6) {
+        @media(min-width: @screen-sm-min) {
+            text-align: right;
+        }
+    }
+
+    //Every 3rd item, starting at the 1st
+    &:nth-child(3n-2) {
+        @media(min-width: @screen-sm-min) {
+            text-align: left;
+        }
+    }
+
+    //Every item that is next to another item
+    & + & {
+        @media(max-width: @screen-xs-max) {
+            margin-top: 22px;
+        }
+    }
+}
+
+.shop-links__link {
+    display: block;
+    color: #000;
+    font-size: 16px;
+    font-family: lato, sans-serif;
+    text-transform: uppercase;
+
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: underline;
+        color: #000;
+    }
+}
