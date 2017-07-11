@@ -2,22 +2,92 @@
   text-align: center;
   padding: 20px 8px;
 }
+
 .hero-promo__info-block--10off {
   float: none;
   width: 100%;
   clear: both;
   padding-top: 16px;
-  margin-bottom: -10px;  
+  margin-bottom: -10px;
 }
+
 .hero-promo-container__10off {
   .hero-promo__outer-container {
     background-position: left top;
-    background-size: 511px 230px;
+    background-size: 577px 260px;
     @media (min-width: @tablet) {
       background-size: 800px 360px;
     }
   }
+
   .hero-promo__info-block--main {
     width: 100%;
+  }
+
+}
+
+/* page */
+.category_rh {
+  .voucher-page {
+
+    h2 {
+      margin: 8px 0 16px;
+
+      @media (min-width: @tablet) {
+        margin: 32px 0 16px;
+      }
+
+      &.shops-at {
+        margin: 0 0 40px;
+        font-size: 24px;
+      }
+    }
+
+    .voucher_heroimg img {
+      width: 100%;
+      height: auto;
+      &:first-child {
+        display: none;
+      }
+
+      @media (min-width: @tablet) {
+        margin: 32px 0 16px;
+        &:first-child {
+          display: block;
+        }
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+
+    .voucher-steps {
+      text-align: center;
+      margin-bottom: 48px;
+
+      @media (min-width: @tablet) {
+        width: 33.33%;
+        float: left;
+
+        .clearfix();
+      }
+
+      p {
+        font-size: 20px;
+        font-weight: 700;
+        color: #135CA1;
+      }
+
+      img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 20px;
+      }
+    }
+
+    .button {
+      text-align: center;
+    }
+
   }
 }
